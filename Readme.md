@@ -4,8 +4,8 @@
 
 This is a single-page responsive portfolio website created as part of a lab assignment. The website showcases my personal information, projects, experience, and contact details. It is built using **HTML** and **CSS** only, with no JavaScript.
 
-- URL Link to website portfolio: [Click Here](#) <!-- replace # with your GitHub Pages link -->
-- URL Link to website design: [Click Here](#) <!-- replace # with your Figma or Canva link, if you have one -->
+- URL Link to website portfolio: https://bmax32.github.io/Single-page-portfolio-website/
+- URL Link to website design: https://www.figma.com/design/5hhZjwgJwdOtFanDcqqvIk/Developer-Portfolio-Website-Design--Community-?node-id=0-1&p=f&t=dQU0sbdrpZUjTyyX-0
 
 ## 🎯 Purpose
 
@@ -64,7 +64,7 @@ The site is optimized for:
 2. In your code editor, open the terminal.
 3. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/portfolio-website.git
+   git clone (https://github.com/BMAX32/Single-page-portfolio-website.git)
    ```
 4. Open `index.html` in your browser, or run the website locally using the Live Server Extension.
 
