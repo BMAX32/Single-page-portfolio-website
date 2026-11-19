@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#home">Skip to content</a>
@@ -42,7 +43,7 @@
         <img src="images/avatar.jpg" alt="Portrait of the developer" width="176" height="176">
       </div>
 
-      <h1 class="hero__title">HII, I am Birame<br>a passionate about <br><span class="text-gradient">Software and Hardware!</span></h1>
+      <h1 class="hero__title">HII, I am Birame<br>a passionate about <br><span class="text-gradient" id="typed">Software and Hardware!</span></h1>
 
       <p class="hero__text">
         Hello I am a 1st year computer science student
@@ -80,7 +81,7 @@
       <h2 class="section__title section__title--orange">Projects</h2>
 
       <div class="projects">
-        <a class="card" href="#modal-car">
+        <button class="card" type="button" data-modal-open="modal-car" aria-haspopup="dialog">
           <span class="card__media card__media--car card__media--has-img">
             <img class="card__img" src="images/autonomous-car.svg" alt="" loading="lazy">
             <span class="card__headline">AUTONOMOUS CAR</span>
@@ -92,9 +93,9 @@
             </span>
             <span class="card__arrow" aria-hidden="true">↗</span>
           </span>
-        </a>
+        </button>
 
-        <a class="card" href="#modal-web">
+        <button class="card" type="button" data-modal-open="modal-web" aria-haspopup="dialog">
           <span class="card__media card__media--web card__media--has-img">
             <img class="card__img" src="images/coding.svg" alt="" loading="lazy">
             <span class="card__headline">PORTFOLIO WEBSITE</span>
@@ -106,14 +107,14 @@
             </span>
             <span class="card__arrow" aria-hidden="true">↗</span>
           </span>
-        </a>
+        </button>
       </div>
 
       <!-- Project pop-up windows -->
       <div class="modal" id="modal-car">
-        <a class="modal__backdrop" href="#projects" aria-label="Close"></a>
-        <div class="modal__box" role="dialog" aria-labelledby="modal-car-title">
-        <a class="modal__close" href="#projects" aria-label="Close">&times;</a>
+        <button class="modal__backdrop" type="button" data-modal-close aria-label="Close"></button>
+        <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-car-title">
+        <button class="modal__close" type="button" data-modal-close aria-label="Close">&times;</button>
         <img class="modal__img" src="images/autonomous-car.svg" alt="Top view of the autonomous car with its sensors labelled">
         <h3 class="modal__title" id="modal-car-title">Autonomous Car</h3>
         <p class="modal__text">A small self-driving car built around an Arduino. It detects obstacles and track markings with its sensors, streams live video through a camera module, and steers itself by controlling the motors through a driver board.</p>
@@ -136,9 +137,9 @@
       </div>
 
       <div class="modal" id="modal-web">
-        <a class="modal__backdrop" href="#projects" aria-label="Close"></a>
-        <div class="modal__box" role="dialog" aria-labelledby="modal-web-title">
-        <a class="modal__close" href="#projects" aria-label="Close">&times;</a>
+        <button class="modal__backdrop" type="button" data-modal-close aria-label="Close"></button>
+        <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-web-title">
+        <button class="modal__close" type="button" data-modal-close aria-label="Close">&times;</button>
         <img class="modal__img" src="images/coding.svg" alt="Code editor showing HTML, CSS and JavaScript">
         <h3 class="modal__title" id="modal-web-title">Portfolio Website</h3>
         <p class="modal__text">This personal portfolio, built from scratch to present my work, experience and contact details. It is responsive, with a sticky navigation bar, a mobile menu and project pop-ups.</p>
@@ -178,7 +179,7 @@
             <h3 class="job__title">Member of Senegalese Robotics Association</h3>
             <time class="job__date">Jan 2022 - Present</time>
           </div>
-          <p class="job__text">I have always been passionated about Software and Hardware. And the domaine where both are combine is Robotics and IOT. SBA is an association that have the of developping new technologie related to these field</p>
+          <p class="job__text">I have always been passionated about Software and Hardware. And the domaine where both are combine is Robotics and IOT. SBA is an association that have the ambition of developping new technologie related to these field</p>
         </li>
 
         

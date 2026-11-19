@@ -2,10 +2,10 @@
 
 ## 📖 Project Overview
 
-This is a single-page responsive portfolio website created as part of a lab assignment. The website showcases my personal information, projects, experience, and contact details. It is built using **HTML** and **CSS** only, with no JavaScript.
+This is a single-page responsive portfolio website created as part of a lab assignment. The website showcases my personal information, projects, experience, and contact details. It is built using **HTML**, **CSS** and a small amount of vanilla **JavaScript**.
 
-- URL Link to website portfolio: https://bmax32.github.io/Single-page-portfolio-website/
-- URL Link to website design: https://www.figma.com/design/5hhZjwgJwdOtFanDcqqvIk/Developer-Portfolio-Website-Design--Community-?node-id=0-1&p=f&t=dQU0sbdrpZUjTyyX-0
+- URL Link to website portfolio: [Click Here](#) <!-- replace # with your GitHub Pages link -->
+- URL Link to website design: [Click Here](#) <!-- replace # with your Figma or Canva link, if you have one -->
 
 ## 🎯 Purpose
 
@@ -26,6 +26,7 @@ This portfolio is designed for:
 
 - HTML5 (semantic tags)
 - CSS3 (Flexbox, Grid, CSS Variables, Box Model, Media Queries)
+- JavaScript (vanilla: project pop-ups and typewriter effect)
 - SVG (project illustrations and icons)
 - Google Fonts (Poppins and Orbitron)
 
@@ -50,11 +51,12 @@ The site is optimized for:
 
 > Responsive design is achieved using media queries and flexible layouts (Flexbox and Grid). On small screens the navigation becomes a hamburger menu and the project cards stack in one column.
 
-## ✨ Special Features (HTML and CSS only)
+## ✨ Special Features
 
 - **Sticky header** that stays visible while scrolling, with an active-link underline
 - **3D black and white logo** made with stacked `text-shadow` layers
-- **Project pop-ups** built with the CSS `:target` selector
+- **Project pop-ups** built with JavaScript (open/close, Esc key, focus trap, scroll lock)
+- **Typewriter effect** in the hero title, written in JavaScript
 - **Mobile menu** built with a hidden checkbox and a label
 - **Accessibility**: skip link, keyboard focus styles, alt text, and reduced-motion support
 
@@ -64,7 +66,7 @@ The site is optimized for:
 2. In your code editor, open the terminal.
 3. Clone the repository:
    ```bash
-   git clone (https://github.com/BMAX32/Single-page-portfolio-website.git)
+   git clone https://github.com/your-username/portfolio-website.git
    ```
 4. Open `index.html` in your browser, or run the website locally using the Live Server Extension.
 
@@ -77,6 +79,7 @@ portfolio-website/
 │
 ├── index.html
 ├── style.css
+├── script.js
 ├── images/
 │   ├── avatar.jpg
 │   ├── autonomous-car.svg
